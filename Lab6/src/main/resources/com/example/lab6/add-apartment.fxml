@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import javafx.scene.layout.*?>
+
+<GridPane prefHeight="350.0" prefWidth="450.0" xmlns="http://javafx.com/javafx/17.0.2-ea" xmlns:fx="http://javafx.com/fxml/1" fx:controller="com.example.lab6.AddApartmentController">
+    <padding>
+        <Insets bottom="20.0" left="20.0" right="20.0" top="20.0" />
+    </padding>
+    <columnConstraints>
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+        <ColumnConstraints hgrow="SOMETIMES" minWidth="10.0" prefWidth="100.0" />
+    </columnConstraints>
+    <rowConstraints>
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+        <RowConstraints minHeight="10.0" prefHeight="30.0" vgrow="SOMETIMES" />
+      <RowConstraints />
+      <RowConstraints />
+
+    </rowConstraints>
+    <children>
+        <Label text="Адреса" />
+        <Label text="Кількість кімнат" GridPane.rowIndex="1" />
+        <Label text="Ціна" GridPane.rowIndex="2" />
+        <Label minWidth="125.0" prefHeight="18.0" prefWidth="125.0" text="Орендована?" GridPane.rowIndex="5" />
+        <Button mnemonicParsing="false" onAction="#addApartmentToDb" prefHeight="26.0" prefWidth="85.0" text="Зберегти" textAlignment="CENTER" GridPane.rowIndex="7">
+            <GridPane.margin>
+                <Insets left="63.0" />
+            </GridPane.margin></Button>
+        <TextField fx:id="address" GridPane.columnIndex="1" />
+        <TextField fx:id="numberOfRooms" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+        <TextField fx:id="price" GridPane.columnIndex="1" GridPane.rowIndex="2" />
+      <Label text="Дата оренди" GridPane.rowIndex="3" />
+      <Label text="Термін оренди до" GridPane.rowIndex="4" />
+      <TextField  fx:id="rentDate" GridPane.columnIndex="1" GridPane.rowIndex="3" />
+      <TextField  fx:id="termRent" GridPane.columnIndex="1" GridPane.rowIndex="4" />
+      <CheckBox  fx:id="isRented" mnemonicParsing="false" GridPane.columnIndex="1" GridPane.halignment="CENTER" GridPane.rowIndex="5" />
+    </children>
+
+</GridPane>
