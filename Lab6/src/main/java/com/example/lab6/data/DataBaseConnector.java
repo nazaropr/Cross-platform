@@ -9,7 +9,7 @@ public class DataBaseConnector {
     private String dataBasePassword;
     private String apartmentClass;
     public DataBaseConnector(String dataBaseName){
-        this.dataBaseUrl = "jdbc:h2:/POLITECH/6_sem/крос-платформенне/лаби/Lab6/db/Apartments";
+        this.dataBaseUrl = "jdbc:h2:/POLITECH/6_sem/крос-платформенне/лаби/Lab_6/Lab6/db/Apartments";
         this.dataBaseUser = "User";
         this.dataBasePassword = "password";
         this.apartmentClass = "org.h2.Driver";
