@@ -6,7 +6,7 @@ import java.sql.DriverManager
 import java.sql.SQLException
 
 class DataBaseConnector(dataBaseName: String?) {
-    private val dataBaseUrl = "jdbc:h2:/POLITECH/6_sem/крос-платформенне/лаби/Lab6kotlin/db/Apartments"
+    private val dataBaseUrl = "jdbc:h2:/POLITECH/6_sem/крос-платформенне/лаби/Lab_6/Lab6kotlin/db/Apartments"
     private val dataBaseUser = "User"
     private val dataBasePassword = "password"
     private val apartmentClass = "org.h2.Driver"
